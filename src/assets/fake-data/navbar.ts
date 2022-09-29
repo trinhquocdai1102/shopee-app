@@ -1,27 +1,27 @@
 export const topNavLeftItems = [
     {
-        id: 1,
+        id: 'item1',
         title: 'Kênh Người Bán',
         clickAble: true,
         link: '',
         icon: [],
     },
     {
-        id: 2,
+        id: 'item2',
         title: 'Trở thành Người bán Shopee',
         clickAble: true,
         link: '',
         icon: [],
     },
     {
-        id: 3,
+        id: 'item3',
         title: 'Tải ứng dụng',
         clickAble: true,
         link: '',
         icon: [],
     },
     {
-        id: 4,
+        id: 'item4',
         title: 'Kết nối',
         clickAble: false,
         link: '',
@@ -34,19 +34,19 @@ export const topNavLeftItems = [
 
 export const topNavRightItems = [
     {
-        id: 1,
+        id: 'item1',
         title: ['Thông báo'],
         link: '',
         icon: [{ id: 1, thumbnail: 'bell' }],
     },
     {
-        id: 2,
+        id: 'item2',
         title: ['Hỗ trợ'],
         link: '',
         icon: [{ id: 1, thumbnail: 'question-circle' }],
     },
     {
-        id: 3,
+        id: 'item3',
         title: ['Tiếng Việt', 'Tiếng Anh'],
         link: '',
         icon: [

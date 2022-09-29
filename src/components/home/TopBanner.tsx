@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { underSliderList } from '../../assets/fake-data/slider';
+import { sliderData, underSliderList } from '../../assets/fake-data/slider';
 import Grid from '../common/Grid';
-import Slider from '../slider/Slider';
+import Slider from '../slider/SliderImage';
 
 const TopBanner = () => {
     return (
         <>
             <Grid col={3} gap={6}>
-                <Slider />
+                <Slider className='home-swiper' data={sliderData} />
                 <div className='top-banner-right'>
                     <Link to='#'>
                         <img
@@ -27,7 +27,7 @@ const TopBanner = () => {
             <div className='top-banner-list flex'>
                 {underSliderList.map((item) => {
                     return (
-                        <Link to='#'>
+                        <Link to='#' key={item.id}>
                             <div className='top-banner-list__main'>
                                 <div className='banner-icon'>
                                     <img src={item.thumbnail} alt='' />

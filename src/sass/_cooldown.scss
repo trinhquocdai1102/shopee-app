@@ -1,0 +1,15 @@
+.cooldown-clock {
+  display: flex;
+  gap: 6px;
+  margin-left: 20px;
+  .clock-cell {
+    height: 16px;
+    font-size: 12px;
+    border-radius: 2px;
+    background: #000;
+    font-weight: bold;
+    padding: 0 3px;
+    color: rgba($color: #fff, $alpha: 0.85);
+    letter-spacing: 1px;
+  }
+}

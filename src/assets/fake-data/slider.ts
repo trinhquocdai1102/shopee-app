@@ -84,185 +84,646 @@ export const underSliderList = [
 
 export const carouselImageList = [
     {
+        id: 'item1',
+        categories: [
+            {
+                id: 1,
+                title: 'Thời trang nam',
+                link: '',
+                thumbnail:
+                    'https://cf.shopee.vn/file/687f3967b7c2fe6a134a2c11894eea4b_tn',
+            },
+            {
+                id: 2,
+                title: 'Thời trang nữ',
+                thumbnail:
+                    'https://cf.shopee.vn/file/75ea42f9eca124e9cb3cde744c060e4d_tn',
+                link: '',
+            },
+        ],
+    },
+    {
+        id: 'item2',
+        categories: [
+            {
+                id: 3,
+                title: 'Điện thoại & Phụ kiện',
+                thumbnail:
+                    'https://cf.shopee.vn/file/31234a27876fb89cd522d7e3db1ba5ca_tn',
+                link: '',
+            },
+            {
+                id: 4,
+                title: 'Mẹ & Bé',
+                thumbnail:
+                    'https://cf.shopee.vn/file/099edde1ab31df35bc255912bab54a5e_tn',
+                link: '',
+            },
+        ],
+    },
+    {
+        id: 'item3',
+        categories: [
+            {
+                id: 5,
+                title: 'Thiết bị điện tử',
+                thumbnail:
+                    'https://cf.shopee.vn/file/978b9e4cb61c611aaaf58664fae133c5_tn',
+                link: '',
+            },
+            {
+                id: 6,
+                title: 'Nhà cửa & Đời sống',
+                thumbnail:
+                    'https://cf.shopee.vn/file/24b194a695ea59d384768b7b471d563f_tn',
+                link: '',
+            },
+        ],
+    },
+    {
+        id: 'item4',
+        categories: [
+            {
+                id: 7,
+                title: 'Máy tính & Laptop',
+                thumbnail:
+                    'https://cf.shopee.vn/file/c3f3edfaa9f6dafc4825b77d8449999d_tn',
+                link: '',
+            },
+            {
+                id: 8,
+                title: 'Sắc đẹp',
+                thumbnail:
+                    'https://cf.shopee.vn/file/ef1f336ecc6f97b790d5aae9916dcb72_tn',
+                link: '',
+            },
+        ],
+    },
+    {
+        id: 'item5',
+        categories: [
+            {
+                id: 9,
+                title: 'Máy ảnh & Máy quay phim',
+                thumbnail:
+                    'https://cf.shopee.vn/file/ec14dd4fc238e676e43be2a911414d4d_tn',
+                link: '',
+            },
+            {
+                id: 10,
+                title: 'Sức khỏe',
+                thumbnail:
+                    'https://cf.shopee.vn/file/49119e891a44fa135f5f6f5fd4cfc747_tn',
+                link: '',
+            },
+        ],
+    },
+    {
+        id: 'item6',
+        categories: [
+            {
+                id: 11,
+                title: 'Đồng hồ',
+                thumbnail:
+                    'https://cf.shopee.vn/file/86c294aae72ca1db5f541790f7796260_tn',
+                link: '',
+            },
+            {
+                id: 12,
+                title: 'Giày dép nữ',
+                thumbnail:
+                    'https://cf.shopee.vn/file/48630b7c76a7b62bc070c9e227097847_tn',
+                link: '',
+            },
+        ],
+    },
+    {
+        id: 'item7',
+        categories: [
+            {
+                id: 13,
+                title: 'Giày dép nam',
+                thumbnail:
+                    'https://cf.shopee.vn/file/74ca517e1fa74dc4d974e5d03c3139de_tn',
+                link: '',
+            },
+            {
+                id: 14,
+                title: 'Túi ví nữ',
+                thumbnail:
+                    'https://cf.shopee.vn/file/fa6ada2555e8e51f369718bbc92ccc52_tn',
+                link: '',
+            },
+        ],
+    },
+    {
+        id: 'item8',
+        categories: [
+            {
+                id: 15,
+                title: 'Thiết bị điện gia dụng',
+                thumbnail:
+                    'https://cf.shopee.vn/file/7abfbfee3c4844652b4a8245e473d857_tn',
+                link: '',
+            },
+            {
+                id: 16,
+                title: 'Phụ kiện & Trang sức nữ',
+                thumbnail:
+                    'https://cf.shopee.vn/file/8e71245b9659ea72c1b4e737be5cf42e_tn',
+                link: '',
+            },
+        ],
+    },
+    {
+        id: 'item9',
+        categories: [
+            {
+                id: 17,
+                title: 'Thể thao & Du lịch',
+                thumbnail:
+                    'https://cf.shopee.vn/file/6cb7e633f8b63757463b676bd19a50e4_tn',
+                link: '',
+            },
+            {
+                id: 18,
+                title: 'Bách hóa Online',
+                thumbnail:
+                    'https://cf.shopee.vn/file/c432168ee788f903f1ea024487f2c889_tn',
+                link: '',
+            },
+        ],
+    },
+    {
+        id: 'item10',
+        categories: [
+            {
+                id: 19,
+                title: 'Ô tô & Xe máy & Xe đạp',
+                thumbnail:
+                    'https://cf.shopee.vn/file/3fb459e3449905545701b418e8220334_tn',
+                link: '',
+            },
+            {
+                id: 20,
+                title: 'Nhà sách Online',
+                thumbnail:
+                    'https://cf.shopee.vn/file/36013311815c55d303b0e6c62d6a8139_tn',
+                link: '',
+            },
+        ],
+    },
+    {
+        id: 'item11',
+        categories: [
+            {
+                id: 21,
+                title: 'Balo & túi ví nam',
+                thumbnail:
+                    'https://cf.shopee.vn/file/18fd9d878ad946db2f1bf4e33760c86f_tn',
+                link: '',
+            },
+            {
+                id: 22,
+                title: 'Thời trang trẻ em',
+                thumbnail:
+                    'https://cf.shopee.vn/file/4540f87aa3cbe99db739f9e8dd2cdaf0_tn',
+                link: '',
+            },
+        ],
+    },
+    {
+        id: 'item12',
+        categories: [
+            {
+                id: 23,
+                title: 'Đồ chơi',
+                thumbnail:
+                    'https://cf.shopee.vn/file/ce8f8abc726cafff671d0e5311caa684_tn',
+                link: '',
+            },
+            {
+                id: 24,
+                title: 'Giặt giũ & Chăm sóc nhà cửa',
+                thumbnail:
+                    'https://cf.shopee.vn/file/cd8e0d2e6c14c4904058ae20821d0763_tn  ',
+                link: '',
+            },
+        ],
+    },
+    {
+        id: 'item13',
+        categories: [
+            {
+                id: 25,
+                title: 'Chăm sóc thú cưng',
+                thumbnail:
+                    'https://cf.shopee.vn/file/cdf21b1bf4bfff257efe29054ecea1ec_tn',
+                link: '',
+            },
+            {
+                id: 26,
+                title: 'Voucher & Dịch vụ',
+                thumbnail:
+                    'https://cf.shopee.vn/file/b0f78c3136d2d78d49af71dd1c3f38c1_tn',
+                link: '',
+            },
+        ],
+    },
+];
+//https://cf.shopee.vn/file/24adacd9fe3aa0c97cab0f96c7c5a9f9_tn
+
+export const flashSaleList = [
+    {
         id: 1,
-        title: 'Thời trang nam',
+        title: '',
         thumbnail:
-            'https://cf.shopee.vn/file/687f3967b7c2fe6a134a2c11894eea4b_tn',
+            'https://cf.shopee.vn/file/4fdb84d2ac7d72361ecd1b64069de988_tn',
+        salePercent: 43,
+        bannerSale:
+            'https://cf.shopee.vn/file/dadae6af3acd8c8de7828ee37f41cfa2_tn',
+        amountSale: 5,
+        price: 315,
         link: '',
     },
     {
         id: 2,
-        title: 'Điện thoại & Phụ kiện',
+        title: '',
         thumbnail:
-            'https://cf.shopee.vn/file/31234a27876fb89cd522d7e3db1ba5ca_tn',
+            'https://cf.shopee.vn/file/6189b9cc183f12b8b489dd69ac1d0ace_tn',
+        salePercent: 23,
+        bannerSale:
+            'https://cf.shopee.vn/file/dadae6af3acd8c8de7828ee37f41cfa2_tn',
+        amountSale: 25,
+        price: 315,
         link: '',
     },
     {
         id: 3,
-        title: 'Thiết bị điện tử',
+        title: '',
         thumbnail:
-            'https://cf.shopee.vn/file/978b9e4cb61c611aaaf58664fae133c5_tn"',
+            'https://cf.shopee.vn/file/3ef7db62010e1fca4d4c958919693f59_tn',
+        salePercent: 23,
+        bannerSale:
+            'https://cf.shopee.vn/file/07dd39d7fbb7e3066699824fc5e21577_tn',
+        amountSale: 13,
+        price: 315,
         link: '',
     },
     {
         id: 4,
-        title: 'Máy tính & Laptop',
+        title: '',
         thumbnail:
-            'https://cf.shopee.vn/file/c3f3edfaa9f6dafc4825b77d8449999d_tn',
+            'https://cf.shopee.vn/file/29fdd0ba9a0051f75b7ff48942165f9c_tn',
+        salePercent: '50',
+        bannerSale:
+            'https://cf.shopee.vn/file/dadae6af3acd8c8de7828ee37f41cfa2_tn',
+        amountSale: 24,
+        price: 315,
         link: '',
     },
     {
         id: 5,
-        title: 'Máy ảnh & Máy quay phim',
+        title: '',
         thumbnail:
-            'https://cf.shopee.vn/file/ec14dd4fc238e676e43be2a911414d4d_tn',
+            'https://cf.shopee.vn/file/a5dcaaacd9fc8262e1199e305ce4ef5d_tn',
+        salePercent: 90,
+        bannerSale:
+            'https://cf.shopee.vn/file/07dd39d7fbb7e3066699824fc5e21577_tn',
+        amountSale: 56,
+        price: 315,
         link: '',
     },
     {
         id: 6,
-        title: 'Đồng hồ',
+        title: '',
         thumbnail:
-            'https://cf.shopee.vn/file/86c294aae72ca1db5f541790f7796260_tn',
+            'https://cf.shopee.vn/file/88be5c2024b232e03bf4734ead2c28e2_tn',
+        salePercent: 93,
+        bannerSale:
+            'https://cf.shopee.vn/file/dadae6af3acd8c8de7828ee37f41cfa2_tn',
+        amountSale: 22,
+        price: 315,
         link: '',
     },
     {
         id: 7,
-        title: 'Giày dép nam',
+        title: '',
         thumbnail:
-            'https://cf.shopee.vn/file/74ca517e1fa74dc4d974e5d03c3139de_tn',
+            'https://cf.shopee.vn/file/45c19c9f4411c704c9ae6bf3fb48193d_tn',
+        salePercent: 45,
+        bannerSale:
+            'https://cf.shopee.vn/file/0d2e4800ba5a0ca0ec4dab283f66d48d_tn',
+        amountSale: 12,
+        price: 315,
         link: '',
     },
     {
         id: 8,
-        title: 'Thiết bị điện gia dụng',
+        title: '',
         thumbnail:
-            'https://cf.shopee.vn/file/7abfbfee3c4844652b4a8245e473d857_tn"',
+            'https://cf.shopee.vn/file/7eff5b750046225fabd2330f2e876873_tn',
+        salePercent: 23,
+        bannerSale:
+            'https://cf.shopee.vn/file/0d2e4800ba5a0ca0ec4dab283f66d48d_tn',
+        amountSale: 65,
+        price: 315,
         link: '',
     },
     {
         id: 9,
-        title: 'Thể thao & Du lịch',
+        title: '',
         thumbnail:
-            'https://cf.shopee.vn/file/6cb7e633f8b63757463b676bd19a50e4_tn"',
+            'https://cf.shopee.vn/file/2a68d66a35fb2d652a5fcc0223f61fe8_tn',
+        salePercent: 65,
+        bannerSale:
+            'https://cf.shopee.vn/file/2186ae6c00b580ba2a34526e767fe325_tn',
+        amountSale: 16,
+        price: 315,
         link: '',
     },
     {
         id: 10,
-        title: 'Ô tô & Xe máy & Xe đạp',
+        title: '',
         thumbnail:
-            'https://cf.shopee.vn/file/3fb459e3449905545701b418e8220334_tn"',
+            'https://cf.shopee.vn/file/3e65c79464a0121b22217c5240abab03_tn',
+        salePercent: 60,
+        bannerSale:
+            'https://cf.shopee.vn/file/dadae6af3acd8c8de7828ee37f41cfa2_tn',
+        amountSale: 24,
+        price: 315,
         link: '',
     },
     {
         id: 11,
-        title: 'Balo & túi ví nam',
+        title: '',
         thumbnail:
-            'https://cf.shopee.vn/file/18fd9d878ad946db2f1bf4e33760c86f_tn',
+            'https://cf.shopee.vn/file/cfb6dec8e08ee2a9d52c8d23d8060e8b_tn',
+        salePercent: 52,
+        bannerSale:
+            'https://cf.shopee.vn/file/2186ae6c00b580ba2a34526e767fe325_tn',
+        amountSale: 56,
+        price: 315,
         link: '',
     },
     {
         id: 12,
-        title: 'Đồ chơi',
+        title: '',
         thumbnail:
-            'https://cf.shopee.vn/file/ce8f8abc726cafff671d0e5311caa684_tn',
+            'https://cf.shopee.vn/file/fcf83edc8be13490774d5958fd1e92db_tn',
+        salePercent: 54,
+        bannerSale:
+            'https://cf.shopee.vn/file/2186ae6c00b580ba2a34526e767fe325_tn',
+        amountSale: 1,
+        price: 315,
         link: '',
     },
     {
         id: 13,
-        title: 'Chăm sóc thú cưng',
+        title: '',
         thumbnail:
-            'https://cf.shopee.vn/file/cdf21b1bf4bfff257efe29054ecea1ec_tn',
+            'https://f.hopee.vn/file/90a876bfec740e5b1f32e728f608324d_tn',
+        salePercent: 60,
+        bannerSale:
+            'https://cf.shopee.vn/file/2186ae6c00b580ba2a34526e767fe325_tn',
+        amountSale: 0,
+        price: 315,
         link: '',
     },
     {
         id: 14,
-        title: 'Thời trang nữ',
+        title: '',
         thumbnail:
-            'https://cf.shopee.vn/file/75ea42f9eca124e9cb3cde744c060e4d_tn',
+            'https://cf.shopee.vn/file/1cef663d3ad037c003e3e5e650acabce_tn',
+        salePercent: 70,
+        bannerSale:
+            'https://cf.shopee.vn/file/0d2e4800ba5a0ca0ec4dab283f66d48d_tn',
+        amountSale: 23,
+        price: 315,
         link: '',
     },
     {
         id: 15,
-        title: 'Mẹ & Bé',
+        title: '',
         thumbnail:
-            'https://cf.shopee.vn/file/099edde1ab31df35bc255912bab54a5e_tn',
+            'https://cf.shopee.vn/file/369ff6c342b7941ea9d5e0bff10a7c00_tn',
+        salePercent: 47,
+        bannerSale:
+            'https://cf.shopee.vn/file/0d2e4800ba5a0ca0ec4dab283f66d48d_tn',
+        amountSale: 55,
+        price: 315,
         link: '',
     },
     {
         id: 16,
-        title: 'Nhà cửa & Đời sống',
+        title: '',
         thumbnail:
-            'https://cf.shopee.vn/file/24b194a695ea59d384768b7b471d563f_tn"',
+            'https://cf.shopee.vn/file/346f06176c891a45c02d68cf3678a00f_tn',
+        salePercent: 99,
+        bannerSale:
+            'https://cf.shopee.vn/file/2186ae6c00b580ba2a34526e767fe325_tn',
+        amountSale: 25,
+        price: 315,
+        link: '',
+    },
+];
+
+export const mallBannerList = [
+    {
+        id: 1,
+        title: '',
+        thumbnail: 'https://cf.shopee.vn/file/f7351532ed8f4cc54eec7161d713afc7',
         link: '',
     },
     {
-        id: 17,
-        title: 'Sắc đẹp',
-        thumbnail:
-            'https://cf.shopee.vn/file/ef1f336ecc6f97b790d5aae9916dcb72_tn',
+        id: 2,
+        title: '',
+        thumbnail: 'https://cf.shopee.vn/file/192bd6596c3bb50e88592f0b5c1a6965',
         link: '',
     },
     {
-        id: 18,
-        title: 'Sức khỏe',
-        thumbnail:
-            'https://cf.shopee.vn/file/49119e891a44fa135f5f6f5fd4cfc747_tn',
+        id: 3,
+        title: '',
+        thumbnail: 'https://cf.shopee.vn/file/192bd6596c3bb50e88592f0b5c1a6965',
         link: '',
     },
     {
-        id: 19,
-        title: 'Giày dép nữ',
-        thumbnail:
-            'https://cf.shopee.vn/file/48630b7c76a7b62bc070c9e227097847_tn',
+        id: 4,
+        title: '',
+        thumbnail: 'https://cf.shopee.vn/file/595f6b0640f1f119a24ff143d1c458cc',
         link: '',
     },
     {
-        id: 20,
-        title: 'Túi ví nữ',
-        thumbnail:
-            'https://cf.shopee.vn/file/fa6ada2555e8e51f369718bbc92ccc52_tn"',
+        id: 5,
+        title: '',
+        thumbnail: 'https://cf.shopee.vn/file/674a6d2e60e1557f268c42ef8d226711',
         link: '',
     },
     {
-        id: 21,
-        title: 'Phụ kiện & Trang sức nữ',
-        thumbnail:
-            'https://cf.shopee.vn/file/8e71245b9659ea72c1b4e737be5cf42e_tn"',
+        id: 6,
+        title: '',
+        thumbnail: 'https://cf.shopee.vn/file/adddbb8ee42527af3b9463c1ca82d10a',
         link: '',
     },
     {
-        id: 22,
-        title: 'Bách hóa Online',
-        thumbnail:
-            'https://cf.shopee.vn/file/c432168ee788f903f1ea024487f2c889_tn',
+        id: 7,
+        title: '',
+        thumbnail: 'https://cf.shopee.vn/file/c32bbf872490df7688f18203f5a48835',
         link: '',
     },
+];
+
+export const mallCarouselList = [
     {
-        id: 23,
-        title: 'Nhà sách Online',
-        thumbnail:
-            'https://cf.shopee.vn/file/36013311815c55d303b0e6c62d6a8139_tn',
-        link: '',
+        id: 1,
+        list: [
+            {
+                id: 1,
+                title: 'Mua là có quà',
+                thumbnail:
+                    'https://cf.shopee.vn/file/621741c90f5d62c13720f7604ddb924f_xhdpi',
+                link: '',
+            },
+            {
+                id: 2,
+                title: 'Mua là có quà',
+                thumbnail:
+                    'https://cf.shopee.vn/file/66397662144a486a604ee293123d3b5f_xhdpi',
+                link: '',
+            },
+        ],
     },
     {
-        id: 24,
-        title: 'Thời trang trẻ em',
-        thumbnail:
-            'https://cf.shopee.vn/file/4540f87aa3cbe99db739f9e8dd2cdaf0_tn"',
-        link: '',
+        id: 2,
+        list: [
+            {
+                id: 1,
+                title: 'Vua bếp Tefal',
+                thumbnail:
+                    'https://cf.shopee.vn/file/85ac40e84c443abdfe0f01d262a29e27_xhdpi',
+                link: '',
+            },
+            {
+                id: 2,
+                title: 'Sữa khỏe quà xịn',
+                thumbnail:
+                    'https://cf.shopee.vn/file/623a1627b46b5a7f2b37ed9c64a99949_xhdpi',
+                link: '',
+            },
+        ],
     },
     {
-        id: 25,
-        title: 'Giặt giũ & Chăm sóc nhà cửa',
-        thumbnail:
-            'https://cf.shopee.vn/file/cd8e0d2e6c14c4904058ae20821d0763_tn  ',
-        link: '',
+        id: 3,
+        list: [
+            {
+                id: 1,
+                title: 'Mua là có quà',
+                thumbnail:
+                    'https://cf.shopee.vn/file/d651692c4adadd50324abd0d7879690c_xhdpi',
+                link: '',
+            },
+            {
+                id: 2,
+                title: 'Nồi chiên từ 990k',
+                thumbnail:
+                    'https://cf.shopee.vn/file/84c0ff7cbe2f23ce8a4450d4c227caea_xhdpi',
+                link: '',
+            },
+        ],
     },
     {
-        id: 26,
-        title: 'Voucher & Dịch vụ',
-        thumbnail:
-            'https://cf.shopee.vn/file/b0f78c3136d2d78d49af71dd1c3f38c1_tn"',
-        link: '',
+        id: 4,
+        list: [
+            {
+                id: 1,
+                title: 'Mua là có quà',
+                thumbnail:
+                    'https://cf.shopee.vn/file/2d5227fd33f1933d4b0f58a7150a3254_xhdpi',
+                link: '',
+            },
+            {
+                id: 2,
+                title: 'Mua 1 tặng 1',
+                thumbnail:
+                    'https://cf.shopee.vn/file/c319b034817e5bab38771c1b90ee490c_xhdpi',
+                link: '',
+            },
+        ],
+    },
+    {
+        id: 5,
+        list: [
+            {
+                id: 1,
+                title: 'Mua là có quà',
+                thumbnail:
+                    'https://cf.shopee.vn/file/b1aee29c05adaeec6aa0834349423557_xhdpi',
+                link: '',
+            },
+            {
+                id: 2,
+                title: 'Mua 1 tặng 1',
+                thumbnail:
+                    'https://cf.shopee.vn/file/b83de9982f6701f642b3f050109bd458_xhdpi',
+                link: '',
+            },
+        ],
+    },
+    {
+        id: 6,
+        list: [
+            {
+                id: 1,
+                title: 'Mua là có quà',
+                thumbnail:
+                    'https://cf.shopee.vn/file/66298b9db7e5a7d12d36ffa50ff4b4a7_xhdpi',
+                link: '',
+            },
+            {
+                id: 2,
+                title: 'Mua 1 tặng 1',
+                thumbnail:
+                    'https://cf.shopee.vn/file/9f32396dadaf37cad8e4ae97fc88b9eb_xhdpi',
+                link: '',
+            },
+        ],
+    },
+    {
+        id: 7,
+        list: [
+            {
+                id: 1,
+                title: 'Mua là có quà',
+                thumbnail:
+                    'https://cf.shopee.vn/file/6b01dfe42b8633a3daba8c8b9e9e7364_xhdpi',
+                link: '',
+            },
+            {
+                id: 2,
+                title: 'Mua 1 tặng 1',
+                thumbnail:
+                    'https://cf.shopee.vn/file/c319b034817e5bab38771c1b90ee490c_xhdpi',
+                link: '',
+            },
+        ],
+    },
+    {
+        id: 8,
+        list: [
+            {
+                id: 1,
+                title: 'Mua là có quà',
+                thumbnail:
+                    'https://cf.shopee.vn/file/2d5227fd33f1933d4b0f58a7150a3254_xhdpi',
+                link: '',
+            },
+            {
+                id: 2,
+                status: 'view-all',
+                title: '',
+                thumbnail: '',
+                link: '',
+            },
+        ],
     },
 ];

@@ -17,24 +17,21 @@ const Header = () => {
                             return (
                                 <Fragment key={item.id}>
                                     {item.clickAble === true ? (
-                                        <Link
-                                            to={item.link}
-                                            target='_blank'
-                                            rel='noopener noreferrer'
-                                        >
+                                        <Link to={item.link}>
                                             {item.title}
-                                            {item.icon.map((i) => {
-                                                return (
-                                                    <Link
-                                                        key={i.id}
-                                                        to={i.link}
-                                                    >
-                                                        <i
-                                                            className={`bi bi-${i.thumbnail}`}
-                                                        ></i>
-                                                    </Link>
-                                                );
-                                            })}
+                                            {item.icon &&
+                                                item.icon.map((i) => {
+                                                    return (
+                                                        <Link
+                                                            key={i.id}
+                                                            to={i.link}
+                                                        >
+                                                            <i
+                                                                className={`bi bi-${i.thumbnail}`}
+                                                            ></i>
+                                                        </Link>
+                                                    );
+                                                })}
                                         </Link>
                                     ) : (
                                         <div className='header-menu__button--unclickable'>
@@ -44,8 +41,6 @@ const Header = () => {
                                                     <Link
                                                         key={i.id}
                                                         to={i.link}
-                                                        target='_blank'
-                                                        rel='noopener noreferrer'
                                                     >
                                                         <i
                                                             className={`bi bi-${i.thumbnail}`}
@@ -62,12 +57,7 @@ const Header = () => {
                     <div className='flex header-menu__right'>
                         {topNavRightItems.map((item) => {
                             return (
-                                <Link
-                                    key={item.id}
-                                    to={item.link}
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                >
+                                <Link key={item.id} to={item.link}>
                                     <i
                                         className={`bi bi-${item.icon[0].thumbnail}`}
                                     ></i>
@@ -83,13 +73,9 @@ const Header = () => {
                                 </Link>
                             );
                         })}
-                        <Link to='#' target='_blank' rel='noopener noreferrer'>
-                            Đăng Ký
-                        </Link>
+                        <Link to='#'>Đăng Ký</Link>
                         <div className='nav__link-separator'></div>
-                        <Link to='#' target='_blank' rel='noopener noreferrer'>
-                            Đăng Nhập
-                        </Link>
+                        <Link to='#'>Đăng Nhập</Link>
                     </div>
                 </nav>
             </div>

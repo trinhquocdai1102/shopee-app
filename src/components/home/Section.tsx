@@ -4,11 +4,7 @@ const Section = (props: any) => {
     return <div className={`section ${props.className}`}>{props.children}</div>;
 };
 export const SectionTitle = (props: any) => {
-    return (
-        <div className='section__title'>
-            <h1>{props.children}</h1>
-        </div>
-    );
+    return <div className='section__title'>{props.children}</div>;
 };
 export const SectionBody = (props: any) => {
     return <div className='section__body'>{props.children}</div>;

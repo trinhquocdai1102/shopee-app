@@ -19,6 +19,8 @@ body {
 
 ul {
     list-style-type: none;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 a {
@@ -56,6 +58,10 @@ img {
     .grid-col-#{$val} {
         grid-template-columns: repeat($val, 1fr);
     }
+}
+
+.txt-red {
+  color: $mall-common-color;
 }
 
 .container {
