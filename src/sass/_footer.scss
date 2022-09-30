@@ -1,0 +1,107 @@
+.footer {
+  margin-top: 60px;
+  &-wrapper {
+    .container-wrapper {
+      .content-info {
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 60px;
+        border-bottom: 1px solid rgba(0, 0, 0, .09);
+        overflow: hidden;
+        .section__title {
+          height: unset !important;
+          min-width: unset !important;
+          padding-left: 0 !important;
+          h1,h2 {
+            text-transform: uppercase;
+            margin: 0 !important;
+          }
+          h1 {
+            font-size: 14px;
+            font-weight: bold;
+          }
+          h2 {
+            font-size: 12px;
+            font-weight: 700;
+          }
+        }
+        .section__body {
+          u, a {
+            color: $txt-link-color !important;
+            margin-left: 4px !important;
+          }
+          a {
+            text-decoration: underline !important;
+          }
+          p {
+            margin-top: 10px !important;
+            font-size: 12px;
+          }
+          ul {
+            list-style-type: disc !important;
+            margin: 14px 0 !important;
+            padding-left: 40px !important;
+          }
+        }
+      }
+    }
+    .container-wrapper {
+      .category-info {
+        margin-top: 60px;
+        padding-bottom: 60px;
+        .section__title {
+          padding-left: 0 !important;
+          height: unset !important;
+          h1 {
+            font-size: 14px !important;
+            font-weight: 700 !important;
+            text-transform: capitalize !important;
+          }
+        }
+        .section__body {
+          display: flex;
+          justify-content: space-between;
+          .category-wrapper {
+            width: calc(100% / 5);
+            padding: 5px 4px;
+            .category-list {
+              .category-title {
+                a {
+                  text-transform: uppercase;
+                  font-weight: 700;
+                  margin-bottom: 6px;
+                }
+              }
+              .category-item-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 10px;
+                .category-item {
+                  display: flex;
+                  a {
+                    &::first-letter {
+                      text-transform: capitalize !important;
+                    }
+                  }
+                }
+                div:last-child {
+                  a {
+                    span {
+                      display: none !important;
+                    }
+                  }
+                }
+              }
+              a, span {
+                color: $txt-link-color !important;
+                font-size: 12px;
+                &:hover {
+                  color: $txt-third-color !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

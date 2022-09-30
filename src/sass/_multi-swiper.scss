@@ -1,0 +1,98 @@
+.multi-swiper {
+  .swiper-wrapper {
+    .swiper-slide {
+      margin: 0 !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &>a {
+        .carousel-column {
+          text-align: center;
+          padding: 0.25rem 0.5rem;
+          .carousel-column-image {
+            width: 100%;
+            height: auto;
+            margin: 8% auto 0;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+          .carousel-column-title {
+            padding-top: 0.6125rem;
+            text-transform: capitalize;
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  &.categories-swiper {
+    .swiper-wrapper {
+      .swiper-slide {
+        width: 120px !important;
+        &>a {
+          &:hover {
+            opacity: 1 !important;
+            box-shadow: 0 0 1px 1px rgba(0, 0, 0, .09);
+          }
+          .carousel-column {
+            min-height: 150px;
+            border-right: 1px solid $border-color;
+            border-bottom: 1px solid $border-color;
+            color: rgba(0, 0, 0, .87);
+            .carousel-column-image {
+              width: 70%;
+              height: auto;
+              margin: 8% auto 0;
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.home-mall__swiper-right {
+    max-width: 800px;
+    .swiper-wrapper {
+      .swiper-slide {
+        &>a {
+          &:hover {
+            opacity: 1 !important;
+          }
+          .carousel-column {
+            min-height: 150px;
+            color: $mall-common-color;
+            .carousel-column-image {
+              width: 70%;
+              height: auto;
+              margin: 8% auto 0;
+              object-fit: cover;
+              img {
+                width: 100%;
+                max-height: 180px;
+                height: auto;
+              }
+            }
+            .carousel-column-title {
+              &::first-letter {
+                text-transform: capitalize;
+              }
+              padding-top: 0 !important;
+              font-size: 14px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+        .view-all {
+          min-height: 200px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

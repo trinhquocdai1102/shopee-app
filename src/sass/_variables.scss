@@ -5,7 +5,8 @@ $main-header-color:(-180deg,#f53d2d,#f63);
 
 $txt-main-color: #333;
 $txt-second-color: #82b7dc;
-$txt-price-color: #ee4d2d;
+$txt-third-color: #ee4d2d;
+$txt-link-color: rgba(0, 0, 0, .54);
 $txt-white: #fff;
 $txt-link: #f1f1f1;
 $txt-link-active: #114084;
@@ -15,6 +16,7 @@ $sale-banner-color: rgba(255, 212, 36, .9);
 $mall-common-color: #d0011b;
 $background-progress: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/flashsale/ac7f81d9ee062223753413ec98497a86.png);
 $fire-streak: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/flashsale/f5233259f90b05efbf3867f564628853.png);
+$icon-top-search: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/homepage/06720e49514cbd94b7552496b4de454a.png);
 
 $btn-main-bg: $main-color;
 $btn-main-color: #f1f1f1;
@@ -36,11 +38,12 @@ $border-radius: 2px;
 
 $colors: (
   'blue': #4267b2,
-  'orange': #fbb96b,
+  'orange': #ee4d2d,
   'pink': #fe7e73,
   'white': #fff,
+  'gray':#555,
   'black': #000,
-  'red': #ff0000,
+  'red': #d0011b,
   'yellow': #ffff00,
   'green': green,
   'main': $main-color,

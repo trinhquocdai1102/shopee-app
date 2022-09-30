@@ -1,0 +1,73 @@
+.single-swiper {
+  .swiper-wrapper {
+    .swiper-slide {
+      &>a {
+        &:hover {
+          opacity: 1 !important;
+        }
+        .carousel-column {
+          .carousel-column-image {
+            width: 100%;
+            height: auto;
+            padding: 0 20px;
+            position: relative;
+            img {
+              min-height: 160px;
+              width: 100%;
+              height: auto;
+            }
+          }
+          .carousel-column-price {
+            margin: 0 auto;
+            text-align: center;
+            padding: 15px 20px;
+            div:first-child {
+              font-size: 18px;
+              color: $txt-third-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.top-search-swiper {
+    .swiper-wrapper {
+      .swiper-slide {
+        .carousel-column {
+          .carousel-column-image {
+            .carousel__top-thumb {
+              position: absolute;
+              background: $icon-top-search no-repeat center;
+              background-size: contain;
+              height: 40px;
+              width: 32px;
+            }
+            .carousel-column__bottom-banner {
+              position: absolute;
+              font-size: 14px;
+              bottom: 0;
+              left: 20px;
+              right: 20px;
+              height: 25px;
+              background-color: rgba(0, 0, 0, .26);
+              color: #fff;
+              text-align: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+          .carousel-column-title {
+            font-size: 18px;
+            padding: 0 20px;
+            text-transform: capitalize;
+            color: #555;
+            word-break: break-word;
+            text-align: left;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}

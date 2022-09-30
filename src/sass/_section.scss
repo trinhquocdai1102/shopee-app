@@ -4,12 +4,13 @@
   }
   &__title {
     display: flex;
+    position: relative;
     align-items: center;
     height: 60px;
     padding: 0 20px;
     h1 {
       font-size: 16px;
-      color: rgba(0, 0, 0, .54);
+      color: $txt-link-color;
       font-weight: 500;
       text-transform: uppercase;
     }

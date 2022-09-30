@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { sliderData, underSliderList } from '../../assets/fake-data/slider';
-import Grid from '../common/Grid';
-import Slider from '../slider/SliderImage';
+import { sliderData, underSliderList } from '../../../assets/fake-data/slider';
+import Grid from '../../common/Grid';
+import Slider from '../../slider/SliderImage';
+import TopBannerCategories from './TopBannerCategories';
 
 const TopBanner = () => {
     return (
@@ -26,16 +27,7 @@ const TopBanner = () => {
             </Grid>
             <div className='top-banner-list flex'>
                 {underSliderList.map((item) => {
-                    return (
-                        <Link to='#' key={item.id}>
-                            <div className='top-banner-list__main'>
-                                <div className='banner-icon'>
-                                    <img src={item.thumbnail} alt='' />
-                                </div>
-                                <div className='banner-title'>{item.title}</div>
-                            </div>
-                        </Link>
-                    );
+                    return <TopBannerCategories data={item} />;
                 })}
             </div>
         </>

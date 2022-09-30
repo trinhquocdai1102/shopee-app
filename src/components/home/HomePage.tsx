@@ -2,13 +2,17 @@ import React from 'react';
 import { pageTitle } from '../../ultis/pageTitle';
 import Helmet from '../common/Helmet';
 import CooldownClock from '../cooldown/CooldownClock';
-import Categories from './Categories';
-import FlashSale from './FlashSale';
-import Section, { SectionBody, SectionTitle } from './Section';
-import TopBanner from './TopBanner';
+import Categories from './category/Categories';
+import FlashSale from './flash-sale/FlashSale';
+import Section, { SectionBody, SectionTitle } from '../common/Section';
+import TopBanner from './top-banner/TopBanner';
 import { add } from 'date-fns';
-import StackBanner from './StackBanner';
-import HomeMall from './HomeMall';
+import StackBanner from './stack-banner/StackBanner';
+import HomeMall from './home-mall/HomeMall';
+import CategoryTitle from './category/CategoryTitle';
+import TopSearch from './top-search/TopSearch';
+import TopSearchTitle from './top-search/TopSearchTitle';
+import TodaySuggest from './today-suggest/TodaySuggest';
 
 const HomePage = () => {
     const cooldownTime = add(new Date(), {
@@ -57,49 +61,31 @@ const HomePage = () => {
                 <Section className='homepage-mall-wrapper'>
                     <div className='container-wrapper'>
                         <SectionTitle>
-                            <div className='title-wrapper'>
-                                <div className='title-container'>
-                                    <a href='https://shopee.vn/mall'>
-                                        Shopee mall
-                                    </a>
-                                    <div className='title-list'>
-                                        <div>
-                                            <img
-                                                src='https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/homepage/6c502a2641457578b0d5f5153b53dd5d.png'
-                                                alt=''
-                                            />
-                                            <span>
-                                                7 ngày miễn phí trả hàng
-                                            </span>
-                                        </div>
-                                        <div>
-                                            <img
-                                                src='https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/homepage/511aca04cc3ba9234ab0e4fcf20768a2.png'
-                                                alt=''
-                                            />
-                                            <span>Hàng Chính Hãng 100%</span>
-                                        </div>
-                                        <div>
-                                            <img
-                                                src='https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/homepage/16ead7e0a68c3cff9f32910e4be08122.png'
-                                                alt=''
-                                            />
-                                            <span>Miễn Phí Vận Chuyển</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='view-all'>
-                                    <a href='https://shopee.vn/mall'>
-                                        Xem tất cả
-                                        <div>
-                                            <i className='bi bi-chevron-right'></i>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+                            <CategoryTitle />
                         </SectionTitle>
                         <SectionBody>
                             <HomeMall />
+                        </SectionBody>
+                    </div>
+                </Section>
+                <Section className='top-search-wrapper'>
+                    <div className='container-wrapper'>
+                        <SectionTitle>
+                            <TopSearchTitle />
+                        </SectionTitle>
+                        <SectionBody>
+                            <TopSearch />
+                        </SectionBody>
+                    </div>
+                </Section>
+                <Section className='today-suggest-wrapper'>
+                    <div className='container-wrapper'>
+                        <SectionTitle>
+                            <h1 className='txt-orange'>Gợi ý hôm nay</h1>
+                            <div className='separator separator-4 bg-orange'></div>
+                        </SectionTitle>
+                        <SectionBody>
+                            <TodaySuggest />
                         </SectionBody>
                     </div>
                 </Section>
