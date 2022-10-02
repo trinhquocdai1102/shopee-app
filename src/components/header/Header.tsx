@@ -17,14 +17,14 @@ const Header = () => {
                             return (
                                 <Fragment key={item.id}>
                                     {item.clickAble === true ? (
-                                        <Link to={item.link}>
+                                        <Link to={item.url}>
                                             {item.title}
                                             {item.icon &&
                                                 item.icon.map((i) => {
                                                     return (
                                                         <Link
                                                             key={i.id}
-                                                            to={i.link}
+                                                            to={i.url}
                                                         >
                                                             <i
                                                                 className={`bi bi-${i.thumbnail}`}
@@ -38,10 +38,7 @@ const Header = () => {
                                             {item.title}
                                             {item.icon.map((i) => {
                                                 return (
-                                                    <Link
-                                                        key={i.id}
-                                                        to={i.link}
-                                                    >
+                                                    <Link key={i.id} to={i.url}>
                                                         <i
                                                             className={`bi bi-${i.thumbnail}`}
                                                         ></i>
@@ -57,7 +54,7 @@ const Header = () => {
                     <div className='flex header-menu__right'>
                         {topNavRightItems.map((item) => {
                             return (
-                                <Link key={item.id} to={item.link}>
+                                <Link key={item.id} to={item.url}>
                                     <i
                                         className={`bi bi-${item.icon[0].thumbnail}`}
                                     ></i>
@@ -104,7 +101,7 @@ const Header = () => {
                         <div className='header-list__under-searchbar'>
                             {listUnderSearchBox.map((item) => {
                                 return (
-                                    <Link key={item.id} to={item.link}>
+                                    <Link key={item.id} to={item.url}>
                                         {item.title}
                                     </Link>
                                 );

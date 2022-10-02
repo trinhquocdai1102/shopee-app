@@ -22,6 +22,7 @@ interface Props {
 const SliderImage = (props: Props) => {
     return (
         <Swiper
+            loop={true}
             spaceBetween={48}
             centeredSlides={props.center ?? true}
             slidesPerView={props.perView ?? 1}
@@ -44,7 +45,7 @@ const SliderImage = (props: Props) => {
                         <Link to={item.link}>
                             <img
                                 className='image-cover'
-                                src={item.link || item.thumbnail || item.image}
+                                src={item.src || item.thumbnail || item.image}
                                 alt=''
                             />
                         </Link>

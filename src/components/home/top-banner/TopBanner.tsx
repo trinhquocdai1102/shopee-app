@@ -13,13 +13,13 @@ const TopBanner = () => {
                 <div className='top-banner-right'>
                     <Link to='#'>
                         <img
-                            src='https://cf.shopee.vn/file/ed43a8153502766924f634259967dcef'
+                            src='https://cf.shopee.vn/file/940d962648208f479817e72b0cdb6688_xhdpi'
                             alt=''
                         />
                     </Link>
                     <Link to='#'>
                         <img
-                            src='https://cf.shopee.vn/file/ed43a8153502766924f634259967dcef'
+                            src='https://cf.shopee.vn/file/fefc420dc359ec447ec376c40ac53458_xhdpi'
                             alt=''
                         />
                     </Link>

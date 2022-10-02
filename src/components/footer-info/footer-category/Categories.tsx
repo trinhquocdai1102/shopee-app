@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import { footerCategory } from '../../../assets/fake-data/footer-categories';
+import { footerCategory } from '../../../assets/fake-data/footer';
 import Section, { SectionBody, SectionTitle } from '../../common/Section';
 
 const Categories = () => {

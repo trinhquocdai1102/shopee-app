@@ -14,7 +14,7 @@
 
     img {
       width: 100%;
-      object-fit: cover;
+      object-fit: fill;
       height: calc($top-banner-height / 2);
       border-radius: $border-radius;
     }

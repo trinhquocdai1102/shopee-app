@@ -1,14 +1,14 @@
 export interface ITopBannerLeft {
     id: number | string;
     url: string;
-    link: string;
+    src: string;
 }
 
 export interface ITopBannerCategories {
     id: number | string;
     thumbnail: string;
     title: string;
-    link: string;
+    url: string;
 }
 
 export interface ICategory {
@@ -19,7 +19,7 @@ export interface ICategory {
 export interface ICategoryList {
     id: number | string;
     title: string;
-    link: string;
+    url: string;
     thumbnail: string;
 }
 
@@ -31,7 +31,7 @@ export interface IFlashSale {
     bannerSale: string;
     price: number;
     amountSale: number;
-    link: string;
+    url: string;
 }
 
 export interface IHomeMall {
@@ -43,7 +43,7 @@ export interface IHomeMallList {
     id: string | number;
     title: string;
     thumbnail: string;
-    link: string;
+    url: string;
     status?: string;
 }
 
@@ -52,7 +52,7 @@ export interface ITopSearch {
     title: string;
     thumbnail: string;
     soldAmount: number;
-    link: string;
+    url: string;
 }
 
 export interface ITodaySuggest {

@@ -1,18 +1,18 @@
 export const sliderData = [
     {
         id: 1,
-        url: 'https://cf.shopee.vn/file/ed43a8153502766924f634259967dcef',
-        link: 'https://cf.shopee.vn/file/ed43a8153502766924f634259967dcef',
+        src: 'https://cf.shopee.vn/file/3108b2a51d1e40f8565b982c45bfa3ff_xxhdpi',
+        url: '',
     },
     {
         id: 2,
-        url: 'https://cf.shopee.vn/file/68cbca58b9e8ae7650426a240110a1dc',
-        link: 'https://cf.shopee.vn/file/68cbca58b9e8ae7650426a240110a1dc',
+        src: 'https://cf.shopee.vn/file/51185aa29f7d3d2541954feb95137075_xxhdpi',
+        url: '',
     },
     {
         id: 3,
-        url: 'https://cf.shopee.vn/file/ab6cac6a5311015355ae440b18a4de07',
-        link: 'https://cf.shopee.vn/file/ab6cac6a5311015355ae440b18a4de07',
+        src: 'https://cf.shopee.vn/file/b87dc96b3ad54f30aac3612e1e4d8fa1_xxhdpi',
+        url: '',
     },
 ];
 
@@ -22,63 +22,63 @@ export const underSliderList = [
         thumbnail:
             'https://cf.shopee.vn/file/46a2a2c810622f314d78455da5e5d926_xhdpi',
         title: 'Khung giờ săn sale',
-        link: '',
+        url: '',
     },
     {
         id: 2,
         thumbnail:
             'https://cf.shopee.vn/file/b3535d7e56c58c4ebe9a87672d38cc5e_xhdpi',
         title: 'Gì cũng rẻ - Mua là FreeShip',
-        link: '',
+        url: '',
     },
     {
         id: 3,
         thumbnail:
             'https://cf.shopee.vn/file/c7a2e1ae720f9704f92f72c9ef1a494a_xhdpi',
         title: 'Miễn phí vận chuyển',
-        link: '',
+        url: '',
     },
     {
         id: 4,
         thumbnail:
             'https://cf.shopee.vn/file/b15de7d7368673a82583a88333ed23e7_xhdpi',
         title: 'Bắt trend - Giá sốc',
-        link: '',
+        url: '',
     },
     {
         id: 5,
         thumbnail:
             'https://cf.shopee.vn/file/21a4856d1fecd4eda143748661315dba_xhdpi',
         title: 'Hoàn xu 6% - Lên đến 200k',
-        link: '',
+        url: '',
     },
     {
         id: 6,
         thumbnail:
             'https://cf.shopee.vn/file/c246f504123a8d589a97b00243e2d945_xhdpi',
         title: 'Hàng hiệu giá tốt',
-        link: '',
+        url: '',
     },
     {
         id: 7,
         thumbnail:
             'https://cf.shopee.vn/file/a08ab28962514a626195ef0415411585_xhdpi',
         title: 'Hàng quốc tế',
-        link: '',
+        url: '',
     },
     {
         id: 8,
         thumbnail:
             'https://cf.shopee.vn/file/9df57ba80ca225e67c08a8a0d8cc7b85_xhdpi',
         title: 'Nạp thẻ & dịch vụ',
-        link: '',
+        url: '',
     },
     {
         id: 9,
         thumbnail:
             'https://cf.shopee.vn/file/96385a65fa50800e096bb790fa5c1dba_xhdpi',
         title: 'Deal sốc từ 1k',
-        link: '',
+        url: '',
     },
 ];
 
@@ -89,7 +89,7 @@ export const carouselImageList = [
             {
                 id: 1,
                 title: 'Thời trang nam',
-                link: '',
+                url: '',
                 thumbnail:
                     'https://cf.shopee.vn/file/687f3967b7c2fe6a134a2c11894eea4b_tn',
             },
@@ -98,7 +98,7 @@ export const carouselImageList = [
                 title: 'Thời trang nữ',
                 thumbnail:
                     'https://cf.shopee.vn/file/75ea42f9eca124e9cb3cde744c060e4d_tn',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -110,14 +110,14 @@ export const carouselImageList = [
                 title: 'Điện thoại & Phụ kiện',
                 thumbnail:
                     'https://cf.shopee.vn/file/31234a27876fb89cd522d7e3db1ba5ca_tn',
-                link: '',
+                url: '',
             },
             {
                 id: 4,
                 title: 'Mẹ & Bé',
                 thumbnail:
                     'https://cf.shopee.vn/file/099edde1ab31df35bc255912bab54a5e_tn',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -129,14 +129,14 @@ export const carouselImageList = [
                 title: 'Thiết bị điện tử',
                 thumbnail:
                     'https://cf.shopee.vn/file/978b9e4cb61c611aaaf58664fae133c5_tn',
-                link: '',
+                url: '',
             },
             {
                 id: 6,
                 title: 'Nhà cửa & Đời sống',
                 thumbnail:
                     'https://cf.shopee.vn/file/24b194a695ea59d384768b7b471d563f_tn',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -148,14 +148,14 @@ export const carouselImageList = [
                 title: 'Máy tính & Laptop',
                 thumbnail:
                     'https://cf.shopee.vn/file/c3f3edfaa9f6dafc4825b77d8449999d_tn',
-                link: '',
+                url: '',
             },
             {
                 id: 8,
                 title: 'Sắc đẹp',
                 thumbnail:
                     'https://cf.shopee.vn/file/ef1f336ecc6f97b790d5aae9916dcb72_tn',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -167,14 +167,14 @@ export const carouselImageList = [
                 title: 'Máy ảnh & Máy quay phim',
                 thumbnail:
                     'https://cf.shopee.vn/file/ec14dd4fc238e676e43be2a911414d4d_tn',
-                link: '',
+                url: '',
             },
             {
                 id: 10,
                 title: 'Sức khỏe',
                 thumbnail:
                     'https://cf.shopee.vn/file/49119e891a44fa135f5f6f5fd4cfc747_tn',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -186,14 +186,14 @@ export const carouselImageList = [
                 title: 'Đồng hồ',
                 thumbnail:
                     'https://cf.shopee.vn/file/86c294aae72ca1db5f541790f7796260_tn',
-                link: '',
+                url: '',
             },
             {
                 id: 12,
                 title: 'Giày dép nữ',
                 thumbnail:
                     'https://cf.shopee.vn/file/48630b7c76a7b62bc070c9e227097847_tn',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -205,14 +205,14 @@ export const carouselImageList = [
                 title: 'Giày dép nam',
                 thumbnail:
                     'https://cf.shopee.vn/file/74ca517e1fa74dc4d974e5d03c3139de_tn',
-                link: '',
+                url: '',
             },
             {
                 id: 14,
                 title: 'Túi ví nữ',
                 thumbnail:
                     'https://cf.shopee.vn/file/fa6ada2555e8e51f369718bbc92ccc52_tn',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -224,14 +224,14 @@ export const carouselImageList = [
                 title: 'Thiết bị điện gia dụng',
                 thumbnail:
                     'https://cf.shopee.vn/file/7abfbfee3c4844652b4a8245e473d857_tn',
-                link: '',
+                url: '',
             },
             {
                 id: 16,
                 title: 'Phụ kiện & Trang sức nữ',
                 thumbnail:
                     'https://cf.shopee.vn/file/8e71245b9659ea72c1b4e737be5cf42e_tn',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -243,14 +243,14 @@ export const carouselImageList = [
                 title: 'Thể thao & Du lịch',
                 thumbnail:
                     'https://cf.shopee.vn/file/6cb7e633f8b63757463b676bd19a50e4_tn',
-                link: '',
+                url: '',
             },
             {
                 id: 18,
                 title: 'Bách hóa Online',
                 thumbnail:
                     'https://cf.shopee.vn/file/c432168ee788f903f1ea024487f2c889_tn',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -262,14 +262,14 @@ export const carouselImageList = [
                 title: 'Ô tô & Xe máy & Xe đạp',
                 thumbnail:
                     'https://cf.shopee.vn/file/3fb459e3449905545701b418e8220334_tn',
-                link: '',
+                url: '',
             },
             {
                 id: 20,
                 title: 'Nhà sách Online',
                 thumbnail:
                     'https://cf.shopee.vn/file/36013311815c55d303b0e6c62d6a8139_tn',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -281,14 +281,14 @@ export const carouselImageList = [
                 title: 'Balo & túi ví nam',
                 thumbnail:
                     'https://cf.shopee.vn/file/18fd9d878ad946db2f1bf4e33760c86f_tn',
-                link: '',
+                url: '',
             },
             {
                 id: 22,
                 title: 'Thời trang trẻ em',
                 thumbnail:
                     'https://cf.shopee.vn/file/4540f87aa3cbe99db739f9e8dd2cdaf0_tn',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -300,14 +300,14 @@ export const carouselImageList = [
                 title: 'Đồ chơi',
                 thumbnail:
                     'https://cf.shopee.vn/file/ce8f8abc726cafff671d0e5311caa684_tn',
-                link: '',
+                url: '',
             },
             {
                 id: 24,
                 title: 'Giặt giũ & Chăm sóc nhà cửa',
                 thumbnail:
                     'https://cf.shopee.vn/file/cd8e0d2e6c14c4904058ae20821d0763_tn  ',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -319,14 +319,14 @@ export const carouselImageList = [
                 title: 'Chăm sóc thú cưng',
                 thumbnail:
                     'https://cf.shopee.vn/file/cdf21b1bf4bfff257efe29054ecea1ec_tn',
-                link: '',
+                url: '',
             },
             {
                 id: 26,
                 title: 'Voucher & Dịch vụ',
                 thumbnail:
                     'https://cf.shopee.vn/file/b0f78c3136d2d78d49af71dd1c3f38c1_tn',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -344,7 +344,7 @@ export const flashSaleList = [
             'https://cf.shopee.vn/file/dadae6af3acd8c8de7828ee37f41cfa2_tn',
         amountSale: 5,
         price: 31512321,
-        link: '',
+        url: '',
     },
     {
         id: 2,
@@ -356,7 +356,7 @@ export const flashSaleList = [
             'https://cf.shopee.vn/file/dadae6af3acd8c8de7828ee37f41cfa2_tn',
         amountSale: 25,
         price: 315,
-        link: '',
+        url: '',
     },
     {
         id: 3,
@@ -368,7 +368,7 @@ export const flashSaleList = [
             'https://cf.shopee.vn/file/07dd39d7fbb7e3066699824fc5e21577_tn',
         amountSale: 13,
         price: 315,
-        link: '',
+        url: '',
     },
     {
         id: 4,
@@ -380,7 +380,7 @@ export const flashSaleList = [
             'https://cf.shopee.vn/file/dadae6af3acd8c8de7828ee37f41cfa2_tn',
         amountSale: 24,
         price: 315,
-        link: '',
+        url: '',
     },
     {
         id: 5,
@@ -392,7 +392,7 @@ export const flashSaleList = [
             'https://cf.shopee.vn/file/07dd39d7fbb7e3066699824fc5e21577_tn',
         amountSale: 56,
         price: 315,
-        link: '',
+        url: '',
     },
     {
         id: 6,
@@ -404,7 +404,7 @@ export const flashSaleList = [
             'https://cf.shopee.vn/file/dadae6af3acd8c8de7828ee37f41cfa2_tn',
         amountSale: 22,
         price: 315,
-        link: '',
+        url: '',
     },
     {
         id: 7,
@@ -416,7 +416,7 @@ export const flashSaleList = [
             'https://cf.shopee.vn/file/0d2e4800ba5a0ca0ec4dab283f66d48d_tn',
         amountSale: 12,
         price: 315,
-        link: '',
+        url: '',
     },
     {
         id: 8,
@@ -428,7 +428,7 @@ export const flashSaleList = [
             'https://cf.shopee.vn/file/0d2e4800ba5a0ca0ec4dab283f66d48d_tn',
         amountSale: 65,
         price: 315,
-        link: '',
+        url: '',
     },
     {
         id: 9,
@@ -440,7 +440,7 @@ export const flashSaleList = [
             'https://cf.shopee.vn/file/2186ae6c00b580ba2a34526e767fe325_tn',
         amountSale: 16,
         price: 315,
-        link: '',
+        url: '',
     },
     {
         id: 10,
@@ -452,7 +452,7 @@ export const flashSaleList = [
             'https://cf.shopee.vn/file/dadae6af3acd8c8de7828ee37f41cfa2_tn',
         amountSale: 24,
         price: 315,
-        link: '',
+        url: '',
     },
     {
         id: 11,
@@ -464,7 +464,7 @@ export const flashSaleList = [
             'https://cf.shopee.vn/file/2186ae6c00b580ba2a34526e767fe325_tn',
         amountSale: 56,
         price: 315,
-        link: '',
+        url: '',
     },
     {
         id: 12,
@@ -476,7 +476,7 @@ export const flashSaleList = [
             'https://cf.shopee.vn/file/2186ae6c00b580ba2a34526e767fe325_tn',
         amountSale: 1,
         price: 315,
-        link: '',
+        url: '',
     },
     {
         id: 13,
@@ -488,7 +488,7 @@ export const flashSaleList = [
             'https://cf.shopee.vn/file/2186ae6c00b580ba2a34526e767fe325_tn',
         amountSale: 0,
         price: 315,
-        link: '',
+        url: '',
     },
     {
         id: 14,
@@ -500,7 +500,7 @@ export const flashSaleList = [
             'https://cf.shopee.vn/file/0d2e4800ba5a0ca0ec4dab283f66d48d_tn',
         amountSale: 23,
         price: 315,
-        link: '',
+        url: '',
     },
     {
         id: 15,
@@ -512,7 +512,7 @@ export const flashSaleList = [
             'https://cf.shopee.vn/file/0d2e4800ba5a0ca0ec4dab283f66d48d_tn',
         amountSale: 55,
         price: 315,
-        link: '',
+        url: '',
     },
     {
         id: 16,
@@ -524,7 +524,7 @@ export const flashSaleList = [
             'https://cf.shopee.vn/file/2186ae6c00b580ba2a34526e767fe325_tn',
         amountSale: 25,
         price: 315,
-        link: '',
+        url: '',
     },
 ];
 
@@ -533,43 +533,43 @@ export const mallBannerList = [
         id: 1,
         title: '',
         thumbnail: 'https://cf.shopee.vn/file/f7351532ed8f4cc54eec7161d713afc7',
-        link: '',
+        url: '',
     },
     {
         id: 2,
         title: '',
         thumbnail: 'https://cf.shopee.vn/file/192bd6596c3bb50e88592f0b5c1a6965',
-        link: '',
+        url: '',
     },
     {
         id: 3,
         title: '',
         thumbnail: 'https://cf.shopee.vn/file/192bd6596c3bb50e88592f0b5c1a6965',
-        link: '',
+        url: '',
     },
     {
         id: 4,
         title: '',
         thumbnail: 'https://cf.shopee.vn/file/595f6b0640f1f119a24ff143d1c458cc',
-        link: '',
+        url: '',
     },
     {
         id: 5,
         title: '',
         thumbnail: 'https://cf.shopee.vn/file/674a6d2e60e1557f268c42ef8d226711',
-        link: '',
+        url: '',
     },
     {
         id: 6,
         title: '',
         thumbnail: 'https://cf.shopee.vn/file/adddbb8ee42527af3b9463c1ca82d10a',
-        link: '',
+        url: '',
     },
     {
         id: 7,
         title: '',
         thumbnail: 'https://cf.shopee.vn/file/c32bbf872490df7688f18203f5a48835',
-        link: '',
+        url: '',
     },
 ];
 
@@ -582,14 +582,14 @@ export const mallCarouselList = [
                 title: 'Mua là có quà',
                 thumbnail:
                     'https://cf.shopee.vn/file/621741c90f5d62c13720f7604ddb924f_xhdpi',
-                link: '',
+                url: '',
             },
             {
                 id: 2,
                 title: 'Mua là có quà',
                 thumbnail:
                     'https://cf.shopee.vn/file/66397662144a486a604ee293123d3b5f_xhdpi',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -601,14 +601,14 @@ export const mallCarouselList = [
                 title: 'Vua bếp Tefal',
                 thumbnail:
                     'https://cf.shopee.vn/file/85ac40e84c443abdfe0f01d262a29e27_xhdpi',
-                link: '',
+                url: '',
             },
             {
                 id: 2,
                 title: 'Sữa khỏe quà xịn',
                 thumbnail:
                     'https://cf.shopee.vn/file/623a1627b46b5a7f2b37ed9c64a99949_xhdpi',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -620,14 +620,14 @@ export const mallCarouselList = [
                 title: 'Mua là có quà',
                 thumbnail:
                     'https://cf.shopee.vn/file/d651692c4adadd50324abd0d7879690c_xhdpi',
-                link: '',
+                url: '',
             },
             {
                 id: 2,
                 title: 'Nồi chiên từ 990k',
                 thumbnail:
                     'https://cf.shopee.vn/file/84c0ff7cbe2f23ce8a4450d4c227caea_xhdpi',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -639,14 +639,14 @@ export const mallCarouselList = [
                 title: 'Mua là có quà',
                 thumbnail:
                     'https://cf.shopee.vn/file/2d5227fd33f1933d4b0f58a7150a3254_xhdpi',
-                link: '',
+                url: '',
             },
             {
                 id: 2,
                 title: 'Mua 1 tặng 1',
                 thumbnail:
                     'https://cf.shopee.vn/file/c319b034817e5bab38771c1b90ee490c_xhdpi',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -658,14 +658,14 @@ export const mallCarouselList = [
                 title: 'Mua là có quà',
                 thumbnail:
                     'https://cf.shopee.vn/file/b1aee29c05adaeec6aa0834349423557_xhdpi',
-                link: '',
+                url: '',
             },
             {
                 id: 2,
                 title: 'Mua 1 tặng 1',
                 thumbnail:
                     'https://cf.shopee.vn/file/b83de9982f6701f642b3f050109bd458_xhdpi',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -677,14 +677,14 @@ export const mallCarouselList = [
                 title: 'Mua là có quà',
                 thumbnail:
                     'https://cf.shopee.vn/file/66298b9db7e5a7d12d36ffa50ff4b4a7_xhdpi',
-                link: '',
+                url: '',
             },
             {
                 id: 2,
                 title: 'Mua 1 tặng 1',
                 thumbnail:
                     'https://cf.shopee.vn/file/9f32396dadaf37cad8e4ae97fc88b9eb_xhdpi',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -696,14 +696,14 @@ export const mallCarouselList = [
                 title: 'Mua là có quà',
                 thumbnail:
                     'https://cf.shopee.vn/file/6b01dfe42b8633a3daba8c8b9e9e7364_xhdpi',
-                link: '',
+                url: '',
             },
             {
                 id: 2,
                 title: 'Mua 1 tặng 1',
                 thumbnail:
                     'https://cf.shopee.vn/file/c319b034817e5bab38771c1b90ee490c_xhdpi',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -715,14 +715,14 @@ export const mallCarouselList = [
                 title: 'Mua là có quà',
                 thumbnail:
                     'https://cf.shopee.vn/file/2d5227fd33f1933d4b0f58a7150a3254_xhdpi',
-                link: '',
+                url: '',
             },
             {
                 id: 2,
                 status: 'view-all',
                 title: '',
                 thumbnail: '',
-                link: '',
+                url: '',
             },
         ],
     },
@@ -734,139 +734,139 @@ export const topSearchList = [
         title: 'Quần Ống Rộng Nữ',
         thumbnail: 'https://cf.shopee.vn/file/6431a52274771497ff3cea935d2812b9',
         soldAmount: 29,
-        link: '',
+        url: '',
     },
     {
         id: 2,
         title: 'Kẹp Tóc Càng Cua Đơn Giản Cho Nữ',
         thumbnail: 'https://cf.shopee.vn/file/56247e721a47ecce34e26b2916c23a54',
         soldAmount: 23,
-        link: '',
+        url: '',
     },
     {
         id: 3,
         title: 'Cuộn Len',
         thumbnail: 'https://cf.shopee.vn/file/96ebd654d5f96234c688dffdc5702a71',
         soldAmount: 67,
-        link: '',
+        url: '',
     },
     {
         id: 4,
         title: 'Hình Xăm Dán Chống Nước',
         thumbnail: 'https://cf.shopee.vn/file/74f2cc2ad0656b4d056bed0aa590b035',
         soldAmount: 87,
-        link: '',
+        url: '',
     },
     {
         id: 5,
         title: 'Set Trang Trí Sinh Nhật',
         thumbnail: 'https://cf.shopee.vn/file/9ca181296590a109621125bf1ea457a7',
         soldAmount: 12,
-        link: '',
+        url: '',
     },
     {
         id: 6,
         title: 'Mũ Bảo Hiểm Nửa Đầu',
         thumbnail: 'https://cf.shopee.vn/file/d61c0bd6517be0b1326b71598a24c2ec',
         soldAmount: 12,
-        link: '',
+        url: '',
     },
     {
         id: 7,
         title: 'Quần Lót Nữ Cotton',
         thumbnail: 'https://cf.shopee.vn/file/8875affa67a942d66628792657fe8b18',
         soldAmount: 114,
-        link: '',
+        url: '',
     },
     {
         id: 8,
         title: 'Mascara',
         thumbnail: 'https://cf.shopee.vn/file/4f5b6c76588b7c8a944e491fef4c3f2e',
         soldAmount: 23,
-        link: '',
+        url: '',
     },
     {
         id: 9,
         title: 'Ốp Lưng Iphone',
         thumbnail: 'https://cf.shopee.vn/file/6d1416daa515aaf1a3c1b6c5fc47e07b',
         soldAmount: 89,
-        link: '',
+        url: '',
     },
     {
         id: 10,
         title: 'Quần Lót Nam Co Dãn',
         thumbnail: 'https://cf.shopee.vn/file/aa4177a5d563c5c5b9bc4536890ccc8e',
         soldAmount: 76,
-        link: '',
+        url: '',
     },
     {
         id: 11,
         title: 'Bút Kẻ Mắt Chống Nước',
         thumbnail: 'https://cf.shopee.vn/file/f1e13b6bd536a8c52f2a96458e6bb868',
         soldAmount: 26,
-        link: '',
+        url: '',
     },
     {
         id: 12,
         title: 'Áo Sơmi Nam Ngắn Tay',
         thumbnail: 'https://cf.shopee.vn/file/471e6c1bf316b15f80371c5ba0dd98ea',
         soldAmount: 57,
-        link: '',
+        url: '',
     },
     {
         id: 13,
         title: 'Quần Tây Lưng Cao',
         thumbnail: 'https://cf.shopee.vn/file/0177ea760b828425ec8616c6f47b398b',
         soldAmount: 22,
-        link: '',
+        url: '',
     },
     {
         id: 14,
         title: 'Kem Nền Trang Điểm',
         thumbnail: 'https://cf.shopee.vn/file/14366e79819e771b109bbef1d8e72450',
         soldAmount: 56,
-        link: '',
+        url: '',
     },
     {
         id: 15,
         title: 'Áo Thun Polo Nam Ngắn Tay',
         thumbnail: 'https://cf.shopee.vn/file/3efaf1c0506230e6d812f8d524b20f47',
         soldAmount: 89,
-        link: '',
+        url: '',
     },
     {
         id: 16,
         title: 'Dây Buộc Tóc Cho Nữ',
         thumbnail: 'https://cf.shopee.vn/file/f632ae09be23933386582d8ba19ddde4',
         soldAmount: 29,
-        link: '',
+        url: '',
     },
     {
         id: 17,
         title: 'Son Kem Lì',
         thumbnail: 'https://cf.shopee.vn/file/ee2b1da4a8393468cfdbae245f39f62c',
         soldAmount: 42,
-        link: '',
+        url: '',
     },
     {
         id: 18,
         title: 'Mắt Kính Gọng Tròn',
         thumbnail: 'https://cf.shopee.vn/file/6b88e38115b643b08ac11a43fd34028e',
         soldAmount: 54,
-        link: '',
+        url: '',
     },
     {
         id: 19,
         title: 'Dụng Cụ Tập Tay',
         thumbnail: 'https://cf.shopee.vn/file/5e5b8df5e2e400803a375a24663cfb0f',
         soldAmount: 24,
-        link: '',
+        url: '',
     },
     {
         id: 20,
         title: 'Dép Quai Ngang Nữ',
         thumbnail: 'https://cf.shopee.vn/file/d5580eefc05b473d1816d1161c0863d7',
         soldAmount: 43,
-        link: '',
+        url: '',
     },
 ];

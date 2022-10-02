@@ -8,6 +8,10 @@ export const mainRoute = [
         element: <Home />,
     },
     {
+        path: '/home',
+        element: <Home />,
+    },
+    {
         path: '401',
         element: <p>No Authorization Found</p>,
     },
