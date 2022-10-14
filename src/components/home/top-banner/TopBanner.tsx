@@ -1,15 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { sliderData, underSliderList } from '../../../assets/fake-data/slider';
+import { ITopBannerCategories, ITopBannerLeft } from '../../../interfaces/home';
 import Grid from '../../common/Grid';
-import Slider from '../../slider/SliderImage';
+import Loading from '../../common/Loading';
+import SliderImage from '../../slider/SliderImage';
 import TopBannerCategories from './TopBannerCategories';
 
-const TopBanner = () => {
+interface Props {
+    topBannerList: ITopBannerLeft[];
+    underTopBannerList: ITopBannerCategories[];
+}
+
+const TopBanner = (props: Props) => {
+    const { topBannerList, underTopBannerList } = props;
+
+    if (!topBannerList || !underTopBannerList) {
+        return <Loading />;
+    }
+    console.log('topBannerList', topBannerList);
+    console.log('underTopBannerList', underTopBannerList);
+
     return (
         <>
             <Grid col={3} gap={6}>
-                <Slider className='home-swiper' data={sliderData} />
+                <SliderImage className='home-swiper' data={topBannerList} />
                 <div className='top-banner-right'>
                     <Link to='#'>
                         <img
@@ -26,8 +40,12 @@ const TopBanner = () => {
                 </div>
             </Grid>
             <div className='top-banner-list flex'>
-                {underSliderList.map((item) => {
-                    return <TopBannerCategories data={item} />;
+                {underTopBannerList.map((item: ITopBannerCategories) => {
+                    return (
+                        <Link to='#' key={`under-top-banner-${item._id}`}>
+                            <TopBannerCategories data={item} />
+                        </Link>
+                    );
                 })}
             </div>
         </>

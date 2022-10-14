@@ -1,10 +1,15 @@
 import React from 'react';
 import { SwiperSlide } from 'swiper/react';
-import { topSearchList } from '../../../assets/fake-data/slider';
+import { ITopSearch } from '../../../interfaces/home';
 import SliderProduct from '../../slider/SliderProduct';
 import TopSearchItems from './TopSearchItems';
 
-const TopSearch = () => {
+interface Props {
+    topSearchList: ITopSearch[];
+}
+
+const TopSearch = (props: Props) => {
+    const { topSearchList } = props;
     return (
         <div className='image-carousel-wrapper'>
             <ul className='image-carousel__item-list'>
@@ -20,7 +25,7 @@ const TopSearch = () => {
                 >
                     {topSearchList.map((item) => {
                         return (
-                            <li key={item.id}>
+                            <li key={`top-search-${item._id}`}>
                                 <SwiperSlide>
                                     <TopSearchItems data={item} />
                                 </SwiperSlide>

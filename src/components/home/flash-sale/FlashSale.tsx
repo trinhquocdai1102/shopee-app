@@ -1,10 +1,21 @@
 import React from 'react';
 import { SwiperSlide } from 'swiper/react';
-import { flashSaleList } from '../../../assets/fake-data/slider';
+import { IFlashSale } from '../../../interfaces/home';
+import Loading from '../../common/Loading';
 import SliderProduct from '../../slider/SliderProduct';
 import FlashSaleItems from './FlashSaleItems';
 
-const FlashSale = () => {
+interface Props {
+    flashSaleList: IFlashSale[];
+}
+
+const FlashSale = (props: Props) => {
+    const { flashSaleList } = props;
+
+    if (!flashSaleList) {
+        return <Loading />;
+    }
+
     return (
         <div className='image-carousel-wrapper'>
             <ul className='image-carousel__item-list'>
@@ -20,7 +31,7 @@ const FlashSale = () => {
                 >
                     {flashSaleList.map((item) => {
                         return (
-                            <li key={item.id}>
+                            <li key={`flash-sale-${item._id}`}>
                                 <SwiperSlide>
                                     <FlashSaleItems data={item} />
                                 </SwiperSlide>

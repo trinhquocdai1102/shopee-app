@@ -15,6 +15,7 @@ const Footer = () => {
     const location = useLocation();
     const getDate = Date().split(' ');
     const currentYear = getDate[3];
+    console.log(regionShopee);
 
     return (
         <div className='footer-container'>
@@ -31,7 +32,10 @@ const Footer = () => {
                             <SectionBody>
                                 {customersCare.map((item) => {
                                     return (
-                                        <Link to=''>
+                                        <Link
+                                            to=''
+                                            key={`customers-care-${item.id}`}
+                                        >
                                             <div>{item.title}</div>
                                         </Link>
                                     );
@@ -45,7 +49,7 @@ const Footer = () => {
                             <SectionBody>
                                 {aboutUs.map((item) => {
                                     return (
-                                        <Link to=''>
+                                        <Link to='' key={`about-us-${item.id}`}>
                                             <div>{item.title}</div>
                                         </Link>
                                     );
@@ -60,7 +64,9 @@ const Footer = () => {
                                 <SectionBody>
                                     {paymentMethod.map((item) => {
                                         return (
-                                            <div>
+                                            <div
+                                                key={`payment-method-${item.id}`}
+                                            >
                                                 <div>
                                                     <img
                                                         src={item.url}
@@ -79,7 +85,9 @@ const Footer = () => {
                                 <SectionBody>
                                     {transportMethod.map((item) => {
                                         return (
-                                            <div>
+                                            <div
+                                                key={`transport-method-${item.id}`}
+                                            >
                                                 <img
                                                     src={item.url}
                                                     alt={item.title}
@@ -97,7 +105,10 @@ const Footer = () => {
                             <SectionBody>
                                 {followUs.map((item) => {
                                     return (
-                                        <div className='flex mb-3 align-items-center'>
+                                        <div
+                                            className='flex mb-3 align-items-center'
+                                            key={`follow-us-${item.id}`}
+                                        >
                                             <div className='me-2'>
                                                 <i
                                                     style={{ fontSize: '16px' }}
@@ -162,7 +173,7 @@ const Footer = () => {
                             <div className='me-1'>Quốc gia {'&'} khu vực: </div>
                             {regionShopee.map((item) => {
                                 return (
-                                    <div>
+                                    <div key={`region-shopee-${item.id}`}>
                                         <a
                                             href={item.url}
                                             target='_blank'

@@ -23,9 +23,9 @@ interface Props {
 }
 
 const SliderProduct = (props: Props) => {
-    // console.log(props.speed);
     return (
         <Swiper
+            loop={false}
             centeredSlides={props.center ?? true}
             slidesPerView={props.perView ?? 1}
             speed={props.speed}

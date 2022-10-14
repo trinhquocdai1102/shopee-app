@@ -13,14 +13,14 @@ const TopSearchItems = (props: Props) => {
             <div className='carousel-column'>
                 <div className='carousel-column-image'>
                     <div className='carousel__top-thumb'></div>
-                    <img src={data.thumbnail} alt='' />
+                    <img src={data?.thumbnail} alt='' />
                     <div className='carousel-column__bottom-banner'>
-                        <div>Bán {data.soldAmount}+ / tháng</div>
+                        <div>Bán {data?.soldAmount}+ / tháng</div>
                     </div>
                 </div>
                 <div className='carousel-column-title'>
                     <div>
-                        <span>{data.title}</span>
+                        <span>{data?.title}</span>
                     </div>
                 </div>
             </div>

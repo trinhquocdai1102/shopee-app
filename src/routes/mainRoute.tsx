@@ -1,6 +1,8 @@
 import React from 'react';
+import CategoryDetail from '../components/category/CategoryDetail';
 
 const Home = React.lazy(() => import('../pages/home/Home'));
+const Category = React.lazy(() => import('../pages/category/Category'));
 
 export const mainRoute = [
     {
@@ -10,6 +12,10 @@ export const mainRoute = [
     {
         path: '/home',
         element: <Home />,
+    },
+    {
+        path: '/:id',
+        element: <Category />,
     },
     {
         path: '401',

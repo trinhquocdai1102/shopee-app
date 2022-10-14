@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { Autoplay, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -41,15 +42,19 @@ const SliderImage = (props: Props) => {
         >
             {props.data.map((item: any) => {
                 return (
-                    <SwiperSlide key={item.id}>
-                        <Link to={item.link}>
-                            <img
-                                className='image-cover'
-                                src={item.src || item.thumbnail || item.image}
-                                alt=''
-                            />
-                        </Link>
-                    </SwiperSlide>
+                    <Fragment key={`slider-image-${item._id ?? item.id}`}>
+                        <SwiperSlide>
+                            <Link to={item.link}>
+                                <img
+                                    className='image-cover'
+                                    src={
+                                        item.src || item.thumbnail || item.image
+                                    }
+                                    alt=''
+                                />
+                            </Link>
+                        </SwiperSlide>
+                    </Fragment>
                 );
             })}
         </Swiper>

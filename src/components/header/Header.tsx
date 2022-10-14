@@ -15,7 +15,7 @@ const Header = () => {
                     <div className='flex header-menu__left align-items-center'>
                         {topNavLeftItems.map((item) => {
                             return (
-                                <Fragment key={item.id}>
+                                <Fragment key={`top-nav-left-${item.id}`}>
                                     {item.clickAble === true ? (
                                         <Link to={item.url}>
                                             {item.title}
@@ -23,7 +23,7 @@ const Header = () => {
                                                 item.icon.map((i) => {
                                                     return (
                                                         <Link
-                                                            key={i.id}
+                                                            key={`top-nav-left-icon-${i.id}`}
                                                             to={i.url}
                                                         >
                                                             <i
@@ -38,7 +38,10 @@ const Header = () => {
                                             {item.title}
                                             {item.icon.map((i) => {
                                                 return (
-                                                    <Link key={i.id} to={i.url}>
+                                                    <Link
+                                                        key={`header-unclickable-button-${i.id}`}
+                                                        to={i.url}
+                                                    >
                                                         <i
                                                             className={`bi bi-${i.thumbnail}`}
                                                         ></i>
@@ -54,7 +57,10 @@ const Header = () => {
                     <div className='flex header-menu__right'>
                         {topNavRightItems.map((item) => {
                             return (
-                                <Link key={item.id} to={item.url}>
+                                <Link
+                                    key={`top-nav-right-${item.id}`}
+                                    to={item.url}
+                                >
                                     <i
                                         className={`bi bi-${item.icon[0].thumbnail}`}
                                     ></i>
@@ -101,7 +107,10 @@ const Header = () => {
                         <div className='header-list__under-searchbar'>
                             {listUnderSearchBox.map((item) => {
                                 return (
-                                    <Link key={item.id} to={item.url}>
+                                    <Link
+                                        key={`list-under-search-box-${item.id}`}
+                                        to={item.url}
+                                    >
                                         {item.title}
                                     </Link>
                                 );

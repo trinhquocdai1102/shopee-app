@@ -62,7 +62,7 @@ const ContentInfo = () => {
                     hàng đầu ở Đông Nam Á, có trụ sở chính ở Singapore, đã có
                     mặt ở khắp các khu vực
                     {countries.map((item, index) => {
-                        return <u key={index}>{item},</u>;
+                        return <u key={`country-${index}`}>{item},</u>;
                     })}
                     <u>Argentina</u>. Với sự đảm bảo của Shopee, bạn sẽ mua hàng
                     trực tuyến an tâm và nhanh chóng hơn bao giờ hết!
@@ -205,7 +205,7 @@ const ContentInfo = () => {
                     đa dạng, từ các hãng mỹ phẩm nổi tiếng hàng đầu như
                     {cosmeticBrandList.map((item, index) => {
                         return (
-                            <Link to='' key={index}>
+                            <Link to='' key={`cosmetic-brand-${index}`}>
                                 {item},
                             </Link>
                         );
@@ -216,7 +216,7 @@ const ContentInfo = () => {
                     thương hiệu giày thể thao phổ biến hiện nay như:
                     {sportShoesBrandList.map((item, index) => {
                         return (
-                            <Link to='' key={index}>
+                            <Link to='' key={`sport-shoes-brand-${index}`}>
                                 {item},
                             </Link>
                         );

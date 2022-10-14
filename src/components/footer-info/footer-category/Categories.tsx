@@ -12,11 +12,14 @@ const Categories = () => {
             <SectionBody>
                 {footerCategory.map((category) => {
                     return (
-                        <div key={category.id} className='category-wrapper'>
+                        <div
+                            key={`footer-category-${category.id}`}
+                            className='category-wrapper'
+                        >
                             {category.colItem.map((item) => {
                                 return (
                                     <div
-                                        key={item.id}
+                                        key={`footer-category-column-${item.id}`}
                                         className='category-list'
                                     >
                                         <div className='category-title'>
@@ -25,7 +28,9 @@ const Categories = () => {
                                         <div className='category-item-wrapper'>
                                             {item.list.map((list) => {
                                                 return (
-                                                    <Fragment key={list.id}>
+                                                    <Fragment
+                                                        key={`footer-category-column-list-${list.id}`}
+                                                    >
                                                         <div className='category-item'>
                                                             <Link to=''>
                                                                 {list.title}

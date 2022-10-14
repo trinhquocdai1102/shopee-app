@@ -1,99 +1,100 @@
+import { v4 as uuidv4 } from 'uuid';
 export const topNavLeftItems = [
     {
-        id: 'item1',
+        id: uuidv4(),
         title: 'Kênh Người Bán',
         clickAble: true,
         url: '',
         icon: [],
     },
     {
-        id: 'item2',
+        id: uuidv4(),
         title: 'Trở thành Người bán Shopee',
         clickAble: true,
         url: '',
         icon: [],
     },
     {
-        id: 'item3',
+        id: uuidv4(),
         title: 'Tải ứng dụng',
         clickAble: true,
         url: '',
         icon: [],
     },
     {
-        id: 'item4',
+        id: uuidv4(),
         title: 'Kết nối',
         clickAble: false,
         url: '',
         icon: [
-            { id: 1, thumbnail: 'facebook', url: '' },
-            { id: 2, thumbnail: 'instagram', url: '' },
+            { id: uuidv4(), thumbnail: 'facebook', url: '' },
+            { id: uuidv4(), thumbnail: 'instagram', url: '' },
         ],
     },
 ];
 
 export const topNavRightItems = [
     {
-        id: 'item1',
+        id: uuidv4(),
         title: ['Thông báo'],
         url: '',
-        icon: [{ id: 1, thumbnail: 'bell' }],
+        icon: [{ id: uuidv4(), thumbnail: 'bell' }],
     },
     {
-        id: 'item2',
+        id: uuidv4(),
         title: ['Hỗ trợ'],
         url: '',
-        icon: [{ id: 1, thumbnail: 'question-circle' }],
+        icon: [{ id: uuidv4(), thumbnail: 'question-circle' }],
     },
     {
-        id: 'item3',
+        id: uuidv4(),
         title: ['Tiếng Việt', 'Tiếng Anh'],
         url: '',
         icon: [
-            { id: 1, thumbnail: 'globe' },
-            { id: 2, thumbnail: 'chevron-down' },
+            { id: uuidv4(), thumbnail: 'globe' },
+            { id: uuidv4(), thumbnail: 'chevron-down' },
         ],
     },
 ];
 
 export const listUnderSearchBox = [
     {
-        id: 1,
+        id: uuidv4(),
         title: 'Áo khoác',
         url: '',
     },
     {
-        id: 2,
+        id: uuidv4(),
         title: 'Dép',
         url: '',
     },
     {
-        id: 3,
+        id: uuidv4(),
         title: 'Túi sách nữ',
         url: '',
     },
     {
-        id: 4,
+        id: uuidv4(),
         title: 'Áo Croptop',
         url: '',
     },
     {
-        id: 5,
+        id: uuidv4(),
         title: 'Ốp iPhone',
         url: '',
     },
     {
-        id: 6,
+        id: uuidv4(),
         title: 'Tai Nghe Bluetooth',
         url: '',
     },
     {
-        id: 7,
+        id: uuidv4(),
         title: 'Váy',
         url: '',
     },
     {
-        id: 8,
+        id: uuidv4(),
         title: 'Bánh Tráng Phơi Sương',
         url: '',
     },

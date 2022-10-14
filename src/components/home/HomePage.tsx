@@ -1,31 +1,112 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { pageTitle } from '../../ultis/pageTitle';
 import Helmet from '../common/Helmet';
 import CooldownClock from '../cooldown/CooldownClock';
-import Categories from './category/Categories';
+import Categories from '../category/Categories';
 import FlashSale from './flash-sale/FlashSale';
 import Section, { SectionBody, SectionTitle } from '../common/Section';
 import TopBanner from './top-banner/TopBanner';
 import { add } from 'date-fns';
 import StackBanner from './stack-banner/StackBanner';
 import HomeMall from './home-mall/HomeMall';
-import CategoryTitle from './category/CategoryTitle';
+import CategoryTitle from '../category/CategoryTitle';
 import TopSearch from './top-search/TopSearch';
 import TopSearchTitle from './top-search/TopSearchTitle';
 import TodaySuggest from './today-suggest/TodaySuggest';
+import {
+    ICategory,
+    ICategoryColumn,
+    IFlashSale,
+    IHomeMall,
+    IHomeMallBanner,
+    IHomeMallItem,
+    ITodaySuggest,
+    ITopBannerCategories,
+    ITopBannerLeft,
+    ITopSearch,
+} from '../../interfaces/home';
+import {
+    getCategoryColumnList,
+    getCategoryList,
+    getFlashSaleList,
+    getMallBannerList,
+    getMallColumnList,
+    getMallItemList,
+    getTodaySuggestList,
+    getTopAdsList,
+    getTopSearchList,
+    getUnderTopAdsList,
+} from '../../services/home';
+import Loading from '../common/Loading';
 
 const HomePage = () => {
+    const [topBannerList, setTopBannerList] = useState([] as any);
+    const [underTopBannerList, setUnderTopBannerList] = useState([] as any);
+    const [flashSaleList, setFlashSaleList] = useState([] as any);
+    const [categoryList, setCategoryList] = useState([] as any);
+    const [categoryColumnList, setCategoryColumnList] = useState([] as any);
+    const [mallBannerList, setMallBannerList] = useState([] as any);
+    const [mallColumnList, setMallColumnList] = useState([] as any);
+    const [mallItemList, setMallItemList] = useState([] as any);
+    const [topSearchList, setTopSearchList] = useState([] as any);
+    const [todaySuggestList, setTodaySuggestList] = useState([] as any);
+
+    const [loading, setLoading] = useState(false);
     const cooldownTime = add(new Date(), {
         days: 0,
         hours: 0,
         minutes: 30,
     });
+
+    useEffect(() => {
+        const getData = async () => {
+            try {
+                setLoading(true);
+                const banner: ITopBannerLeft[] = await getTopAdsList();
+                const underBanner: ITopBannerCategories[] =
+                    await getUnderTopAdsList();
+                const flashSale: IFlashSale[] = await getFlashSaleList();
+                const category: ICategory[] = await getCategoryList();
+                const categoryColumn: ICategoryColumn[] =
+                    await getCategoryColumnList();
+                const mallBanner: IHomeMallBanner[] = await getMallBannerList();
+                const mallColumn: IHomeMall[] = await getMallColumnList();
+                const mallItem: IHomeMallItem[] = await getMallItemList();
+                const topSearch: ITopSearch[] = await getTopSearchList();
+                const todaySuggest: ITodaySuggest[] =
+                    await getTodaySuggestList();
+
+                setTopBannerList(banner);
+                setUnderTopBannerList(underBanner);
+                setCategoryList(category);
+                setCategoryColumnList(categoryColumn);
+                setFlashSaleList(flashSale);
+                setMallBannerList(mallBanner);
+                setMallColumnList(mallColumn);
+                setMallItemList(mallItem);
+                setTopSearchList(topSearch);
+                setTodaySuggestList(todaySuggest);
+                setLoading(false);
+            } catch (err) {
+                throw err;
+            }
+        };
+        getData();
+    }, []);
+
+    if (loading) {
+        return <Loading />;
+    }
+
     return (
         <>
             <Section className='home-top__banner-wrapper'>
                 <div className='container'>
                     <SectionBody>
-                        <TopBanner />
+                        <TopBanner
+                            topBannerList={topBannerList}
+                            underTopBannerList={underTopBannerList}
+                        />
                     </SectionBody>
                 </div>
             </Section>
@@ -36,7 +117,10 @@ const HomePage = () => {
                             <h1>Danh Mục</h1>
                         </SectionTitle>
                         <SectionBody>
-                            <Categories />
+                            <Categories
+                                categoryList={categoryList}
+                                categoryColumnList={categoryColumnList}
+                            />
                         </SectionBody>
                     </div>
                 </Section>
@@ -47,7 +131,7 @@ const HomePage = () => {
                             <CooldownClock cooldownTime={cooldownTime} />
                         </SectionTitle>
                         <SectionBody>
-                            <FlashSale />
+                            <FlashSale flashSaleList={flashSaleList} />
                         </SectionBody>
                     </div>
                 </Section>
@@ -64,7 +148,11 @@ const HomePage = () => {
                             <CategoryTitle />
                         </SectionTitle>
                         <SectionBody>
-                            <HomeMall />
+                            <HomeMall
+                                mallBannerList={mallBannerList}
+                                mallColumnList={mallColumnList}
+                                mallItemList={mallItemList}
+                            />
                         </SectionBody>
                     </div>
                 </Section>
@@ -74,7 +162,7 @@ const HomePage = () => {
                             <TopSearchTitle />
                         </SectionTitle>
                         <SectionBody>
-                            <TopSearch />
+                            <TopSearch topSearchList={topSearchList} />
                         </SectionBody>
                     </div>
                 </Section>
@@ -85,7 +173,7 @@ const HomePage = () => {
                             <div className='separator separator-4 bg-orange'></div>
                         </SectionTitle>
                         <SectionBody>
-                            <TodaySuggest />
+                            <TodaySuggest todaySuggestList={todaySuggestList} />
                         </SectionBody>
                     </div>
                 </Section>

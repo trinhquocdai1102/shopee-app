@@ -1,30 +1,31 @@
 export interface ITopBannerLeft {
-    id: number | string;
+    _id: number | string;
     url: string;
     src: string;
 }
 
 export interface ITopBannerCategories {
-    id: number | string;
+    _id: number | string | any;
     thumbnail: string;
     title: string;
     url: string;
 }
 
-export interface ICategory {
-    id: number | string;
-    categories: ICategoryList[];
+export interface ICategoryColumn {
+    _id: number | string;
+    column: number;
+    categories: ICategory[];
 }
 
-export interface ICategoryList {
-    id: number | string;
+export interface ICategory {
+    _id: number | string;
     title: string;
     url: string;
     thumbnail: string;
 }
 
 export interface IFlashSale {
-    id: number | string;
+    _id: number | string;
     title: string;
     thumbnail: string;
     salePercent: number;
@@ -35,12 +36,19 @@ export interface IFlashSale {
 }
 
 export interface IHomeMall {
-    id: string | number;
-    list: IHomeMallList[];
+    _id: string | number;
+    list: IHomeMallItem[];
 }
 
-export interface IHomeMallList {
-    id: string | number;
+export interface IHomeMallBanner {
+    _id: string | number;
+    title: string;
+    thumbnail: string;
+    url: string;
+}
+
+export interface IHomeMallItem {
+    _id: string | number;
     title: string;
     thumbnail: string;
     url: string;
@@ -48,7 +56,7 @@ export interface IHomeMallList {
 }
 
 export interface ITopSearch {
-    id: number | string;
+    _id: number | string;
     title: string;
     thumbnail: string;
     soldAmount: number;
@@ -56,7 +64,7 @@ export interface ITopSearch {
 }
 
 export interface ITodaySuggest {
-    id: number | string;
+    _id: number | string;
     title: string;
     thumbnail: string;
     favorite: boolean;

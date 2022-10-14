@@ -1,15 +1,44 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import { SwiperSlide } from 'swiper/react';
 import {
-    mallBannerList,
-    mallCarouselList,
-} from '../../../assets/fake-data/slider';
+    IHomeMall,
+    IHomeMallBanner,
+    IHomeMallItem,
+} from '../../../interfaces/home';
 import Grid from '../../common/Grid';
+import Loading from '../../common/Loading';
 import SliderImage from '../../slider/SliderImage';
 import SliderProduct from '../../slider/SliderProduct';
 import HomeMallItems from './HomeMallItems';
 
-const HomePageMall = () => {
+interface Props {
+    mallBannerList: IHomeMallBanner[];
+    mallColumnList: IHomeMall[];
+    mallItemList: IHomeMallItem[];
+}
+
+const HomePageMall = (props: Props) => {
+    const { mallBannerList, mallColumnList, mallItemList } = props;
+    const [mallItemData, setMallItemData] = useState([] as any);
+
+    useEffect(() => {
+        const mallItem = mallColumnList.map(
+            (item: IHomeMall, index: number) => {
+                for (let i = 0; i < mallColumnList.length + 1; i++) {
+                    item.list.push(mallItemList[index + i]);
+                }
+                return {
+                    ...item,
+                    list: [item.list[index], item.list[index + 1]],
+                };
+            }
+        );
+        setMallItemData(mallItem);
+    }, [mallItemList, mallColumnList]);
+
+    if (!mallBannerList || !mallItemList || !mallColumnList) {
+        return <Loading />;
+    }
     return (
         <>
             <Grid col={6}>
@@ -29,13 +58,15 @@ const HomePageMall = () => {
                             className='home-mall__swiper-right multi-swiper'
                             autoplay={false}
                         >
-                            {mallCarouselList.map((item) => {
+                            {mallItemData.map((item: IHomeMall) => {
                                 return (
-                                    <li key={item.id}>
+                                    <li key={`home-mall-${item._id}`}>
                                         <SwiperSlide>
-                                            {item.list.map((i) => {
+                                            {item?.list.map((i) => {
                                                 return (
-                                                    <Fragment key={i.id}>
+                                                    <Fragment
+                                                        key={`mall-item-list-${i?._id}`}
+                                                    >
                                                         <HomeMallItems
                                                             data={i}
                                                         />
